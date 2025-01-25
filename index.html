@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lắc Lì Xì</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="flex items-center justify-center h-screen">
+    <div class="text-center">
+        <h1 class="text-4xl font-bold mb-6 text-white">🎉 Lắc Lì Xì 🎉</h1>
+        <div id="formContainer" class="mb-4">
+            <input id="nameInput" type="text" placeholder="Nhập tên của bạn" class="p-3 rounded-lg shadow-md w-64 focus:outline-none focus:ring-2 focus:ring-pink-500">
+            <button id="startBtn" class="bg-pink-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-pink-600 ml-2">Bắt đầu lắc</button>
+        </div>
+        <div id="lixiAnimation" class="hidden text-white text-3xl font-bold animate-bounce">
+            <img src="assets/img/lixi.png" alt="Lì xì" class="w-24 h-24 mx-auto mb-4">
+            🎁 Đang lắc lì xì... 🎁
+        </div>
+        <div id="result" class="mt-6 text-2xl font-bold text-white hidden">
+            <img src="assets/img/lixi.png" alt="Lì xì" class="w-24 h-24 mx-auto mb-4">
+            Hi <span id="name"></span> !!! <br>
+            Lì xì của bạn là: <span id="lixiAmount"></span>!
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
