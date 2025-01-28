@@ -1,5 +1,5 @@
 const usedNames = new Set();
-const rewards = ["10k", "20k", "50k", "100k", "200k"];
+const rewards = ["1k", "2k", "5k", "10k", "20k"];
 
 document.getElementById("startBtn").addEventListener("click", () => {
     const nameInput = document.getElementById("nameInput").value.trim();
@@ -20,7 +20,7 @@ document.getElementById("startBtn").addEventListener("click", () => {
     setTimeout(() => {
         const randomReward = rewards[Math.floor(Math.random() * rewards.length)];
         usedNames.add(nameInput);
-
+    
         document.getElementById("lixiAnimation").classList.add("hidden");
         document.getElementById("result").classList.remove("hidden");
         document.getElementById('name').textContent=nameInput;
