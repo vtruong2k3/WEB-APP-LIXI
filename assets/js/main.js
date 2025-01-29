@@ -1,5 +1,5 @@
 const usedNames = new Set();
-const rewards = ["100k", "20k", "20k", "10k", "50k","20k", "50k", "10k", "2k"]
+const rewards = ["1k", "2k", "2k", "1k", "20k","2k", "5k", "1k", "2k"]
 
 document.getElementById("startBtn").addEventListener("click", () => {
     const nameInput = document.getElementById("nameInput").value.trim();
